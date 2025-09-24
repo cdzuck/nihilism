@@ -60,7 +60,7 @@ navigation = [
     { url = "$BASE_URL/contribute", title = "Contributing" },
 ]
 
-home_title = "Nihilism"
+home_title = "The tree of Wisdom"
 home_content = "In the emptiness where meaning slips away, thought rises unanchored, learning to endure the weight of a world without guarantees. Illusions dissolve, and in the void, clarity emerges not as an answer but as the strength to forge significance where none is given. Each step through uncertainty becomes a journey, a quiet ascent toward understanding that is never complete yet always alive."
 social_icons = [
     { url = "https://t.me/nihilismftw", title = "Telegram", icon = "telegram" },
