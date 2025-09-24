@@ -1,35 +1,23 @@
-# https://github.com/shalzz/zola-deploy-action
+# Deploy Zola site to GitHub Pages
 name: Zola on GitHub Pages
 
 on:
   push:
     branches:
       - main
-  pull_request:
+  workflow_dispatch:   # allows you to trigger manually from GitHub UI
 
 jobs:
-  build:
-    name: Build for PR or Release Check
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
-    steps:
-      - name: Checkout PR code
-        uses: actions/checkout@v4
-
-      - name: Build only (with drafts)
-        uses: shalzz/zola-deploy-action@v0.21.0
-        env:
-          BUILD_ONLY: true
-          BUILD_FLAGS: --drafts
-        # No deploy — just validate build
-
   build_and_deploy:
     name: Build and Deploy Site
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          submodules: recursive   # fetch theme submodule too
+
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
