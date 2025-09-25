@@ -8,7 +8,7 @@ feed_filenames = ["atom.xml"]
 minify_html = true
 
 
-taxonomies = [{ name = "tags", feed = true }]
+taxonomies = [{ name = "tags", feed = false }]
 
 [search]
 # Whether to include the title of the page/section in the index
