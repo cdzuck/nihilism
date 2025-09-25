@@ -3,7 +3,7 @@ title = "Nihilism"
 base_url = "https://cdzuck.github.io/nihilism/"
 compile_sass = true
 build_search_index = true
-generate_feeds = true
+generate_feeds = false
 feed_filenames = ["atom.xml"]
 minify_html = true
 
@@ -54,9 +54,9 @@ edit_post_url = "https://github.com/cdzuck/nihilism/tree/main"
 #copyright = ""
 date_format = "%d-%m-%Y"
 navigation = [
+    { url = "$BASE_URL/search", title = "Search" },
     { url = "$BASE_URL/archive", title = "Archive" },
     { url = "$BASE_URL/tags", title = "Tags" },
-    { url = "$BASE_URL/search", title = "Search" },
     { url = "$BASE_URL/contribute", title = "Contributing" },
 ]
 
