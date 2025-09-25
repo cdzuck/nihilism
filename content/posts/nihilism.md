@@ -1,9 +1,10 @@
 +++
 title = "Nihilism: A Field Guide to Nothing"
 date = 2025-09-25T10:00:00Z
+author = "EXE"
 
 [taxonomies]
-tags = ["zola", "philosophy", "nihilism", "culture", "markdown-demo"]
+tags = ["philosophy", "nihilism", "culture"]
 +++
 
 > **TL;DR**: Nihilism is the idea that life lacks inherent meaning, value, or truth. That claim has terrified, freed, and inspired people for centuries. What you do *after* facing it—that’s where things get interesting.
